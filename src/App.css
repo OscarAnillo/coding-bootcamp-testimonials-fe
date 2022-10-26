@@ -9,14 +9,13 @@
 .App {
   text-align: center;
   font-family: 'Inter', sans-serif;
-  border: 1px solid red;
   height: 100vh;
   padding: 1em;
 }
 
 .container {
   height: 95%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 /* AvatarComponent */
@@ -27,12 +26,59 @@
   height: 320px;
   text-align: center;
   position: relative;
+  /* border: 1px solid red; */
+}
+.avatar {
+  width: 78%;
+  margin: 2em 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgb(129, 129, 129);
+}
+.bg-avatar .prev {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: .8em 1.5em;
+  position: absolute;
+  top: 88%;
+  left: 40%;
+}
+.bg-avatar .next {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: .8em 1.5em;
+  position: absolute;
+  top: 88%;
+  left: 45.5%;
+}
+.bg-quotes {
+  /* border: 1px solid red; */
+  margin-top: 2em;
+  position: relative;
+  height: 350px;
+}
+.testimonial {
+  color:hsl(240, 38%, 20%);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6em;
+  position: relative;
+  top: -35px;
+}
+.testimonial-name {
+  font-weight: 700;
+}
+.testimonial-position {
+  font-weight: 300;
+  color: hsl(240, 18%, 77%);
+}
+.prev {
+  margin-right: 1em;
+  height: 15px;
   border: 1px solid red;
 }
-.tanya {
-  width: 78%;
-  position: absolute;
-  top: 10%;
-  left: 11%;
-  border-radius: 10px;
+.next {
+  margin-left: 1em;
+  height: 15px;
 }
