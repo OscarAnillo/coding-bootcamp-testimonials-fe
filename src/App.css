@@ -10,11 +10,13 @@
   text-align: center;
   font-family: 'Inter', sans-serif;
   height: 100vh;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .container {
-  height: 95%;
+  width: 90%;
+  margin: auto;
+  height: 90%;
   /* border: 1px solid blue; */
 }
 
@@ -81,4 +83,14 @@
 .next {
   margin-left: 1em;
   height: 15px;
+}
+
+/* CurveComponent */
+.bg-curve {
+  width: 100%;
+  /* border: 1px solid red; */
+  background-image: url("/public/images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
 }
