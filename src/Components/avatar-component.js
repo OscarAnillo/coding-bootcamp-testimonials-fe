@@ -15,7 +15,7 @@ export default function AvatarComponent(){
         setSubject(propertiesInfo[newIndex]);
       };
 
-      const {id, index, name, avatar, position, testimonial} = subject;
+      const {index, name, avatar, position, testimonial} = subject;
 
     return (
         <div className='row-desktop'>
