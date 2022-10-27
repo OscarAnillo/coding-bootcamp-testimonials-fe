@@ -1,7 +1,7 @@
 import AvatarComponent from './Components/avatar-component';
+import CurveComponent from './Components/curve-component';
 
 import './App.css';
-import CurveComponent from './Components/curve-component';
 
 function App() {
   return (

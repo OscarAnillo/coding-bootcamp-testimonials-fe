@@ -11,6 +11,7 @@
   font-family: 'Inter', sans-serif;
   height: 100vh;
   padding: 1em 0;
+  position: relative;
 }
 
 .container {
@@ -76,6 +77,9 @@
   font-weight: 300;
   color: hsl(240, 18%, 77%);
 }
+.testimonial-position-desktop {
+  display: none;
+}
 .prev {
   margin-right: 1em;
   height: 15px;
@@ -92,4 +96,124 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 12vh;
+}
+
+@media(min-width: 1000px) {
+  .container {
+    width: 90%;
+    height: auto;
+    max-width: 1455px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid blue; */
+  }
+  
+  /* AvatarComponent */
+  .bg-avatar {
+    background-image: url("/public/images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 580px;
+    text-align: center;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  .row-desktop {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .row-desktop div {
+    width: 50%;
+    height: 770px;
+    /* border: 1px solid red; */
+  }
+  .avatar {
+    width: 100%;
+    height: 590px;
+    margin: 0em;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px rgb(129, 129, 129);
+    position: relative;
+    top: 50px;
+    left: -5%;
+  }
+  .bg-avatar .prev {
+    background-color: #fff;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: .8em 1.5em;
+    position: absolute;
+    top: 81%;
+    left: 15%;
+  }
+  .bg-avatar .next {
+    background-color: #fff;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: .8em 1.5em;
+    position: absolute;
+    top: 81%;
+    left: 20%;
+  }
+  .bg-quotes {
+    margin-top: 0em;
+    position: relative;
+    height: auto;
+  }
+  .quotes {
+    position: absolute;
+    top: 25%;
+    left: 28.5%;
+  }
+  .testimonial {
+    text-align: left;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 1.6em;
+    position: relative;
+    top: 33%;
+    left: 15%;
+    width: 95%;
+  }
+  .testimonial-name {
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    top: 40%;
+    left: 15%;
+  }
+  .testimonial-position {
+    display: none;
+  }
+  .testimonial-position-desktop {
+    display: inline-block;
+    font-weight: 300;
+    color: hsl(240, 18%, 77%);
+    margin-left: .5em;
+  }
+  .prev {
+    margin-right: 1em;
+    height: 15px;
+    border: 1px solid red;
+  }
+  .next {
+    margin-left: 1em;
+    height: 15px;
+  }
+  
+  /* CurveComponent */
+  .bg-curve {
+    background-image: url("/public/images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    position: relative;
+    top: 90%;
+  }
 }
